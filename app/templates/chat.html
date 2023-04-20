@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title >GigaChadBot</title>
   </head>
   <body>
-    <script src="script.js"></script>
-    <h1>Chatbot</h1>
+    <p class="titre">Chatbot</p>
     <form action="/chat" method="POST">
-      <label for="user_input">Votre question :</label>
-      <input type="text" name="user_input" id="user_input">
+      <input type="text" name="user_input" id="user_input" placeholder="Posez une question">
       <button type="submit">Envoyer</button>
     </form>
   
-    <table>
+    <table class="tableau">
       <thead>
         <tr>
-          <th>Vous :</th>
-          <th>GigaChadBot :</th>
+          <th class="TitreColonne">Vous :</th>
+          <th class="TitreColonne">GigaChadBot :</th>
         </tr>
       </thead>
       <tbody>
         {% for i in range(history['inputs']|length) %}
           <tr>
-            <td>{{ history['inputs'][i] }}</td>
-            <td>{{ history['responses'][i] }}</td>
+            <td class="input">{{ history['inputs'][i] }}</td>
+            <td class="reponse">{{ history['responses'][i] }}</td>
           </tr>
         {% endfor %}
       </tbody>

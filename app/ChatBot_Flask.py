@@ -100,6 +100,10 @@ def MinScore(best_reponse,max_similarity):
 
 def tableauOUTPUT(input,response):
     global history
+    #si tableau>=10==> on le vide   
+    if(len(history)>=10):
+        for i in range(0, len(history)):
+            history.pop(i)
     history['inputs'].append(input)
     history['responses'].append(response)
     return history
@@ -111,7 +115,7 @@ def chatbot(user_input):
     Args:
         user_input (string): message de l'utilisateur
     """
-    filename = "DataChatBot.json" 
+    filename = "app\DataChatBot.json" 
     data = OuvrirFichierJSon(filename)
     input_words = TraitementQuestionUser(user_input, nlp)
     best_response,maxSimilarity = MeilleureReponse(input_words, data, nlp)
