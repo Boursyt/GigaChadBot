@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chatbot</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <h1>Chatbot</h1>
+    <form action="/chat" method="POST">
+      <label for="user_input">Votre question :</label>
+      <input type="text" name="user_input" id="user_input">
+      <button type="submit">Envoyer</button>
+    </form>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Vous :</th>
+          <th>GigaChadBot :</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in range(history['inputs']|length) %}
+          <tr>
+            <td>{{ history['inputs'][i] }}</td>
+            <td>{{ history['responses'][i] }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    
+    
+  </body>
+</html>

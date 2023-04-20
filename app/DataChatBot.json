@@ -1,0 +1,23 @@
+{
+    "Salutations": {
+      "questions": ["Bonjour", "Salut", "Coucou", "Hello", "Hey"],
+      "réponses": ["Bonjour ! Comment puis-je vous aider ?", "Salut ! De quoi avez-vous besoin ?", "Coucou ! Que puis-je faire pour vous ?", "Hello ! Comment puis-je vous aider ?", "Hey ! Que puis-je faire pour vous ?"]
+    },
+    "Prix": {
+      "questions": ["Combien cela coûte-t-il ?", "Quel est le prix ?", "Quels sont les tarifs ?", "Est-ce cher ?"],
+      "réponses": ["Les prix varient en fonction des produits et des services que nous offrons. Vous pouvez trouver plus d'informations sur notre site web.", "Nos tarifs sont compétitifs sur le marché. Vous pouvez trouver plus d'informations sur notre site web."]
+    },
+    "Livraison": {
+      "questions": ["Quel est le délai de livraison ?", "Comment fonctionne la livraison ?"],
+      "réponses": ["Le délai de livraison dépend du produit et de la destination. Vous pouvez trouver plus d'informations sur notre site web.", "Nous avons différents modes de livraison pour répondre à vos besoins. Vous pouvez trouver plus d'informations sur notre site web.", "Nous livrons dans certains pays à l'étranger. Vous pouvez trouver plus d'informations sur notre site web.", "Nous pouvons livrer à une adresse différente de l'adresse de facturation si vous le souhaitez. Vous pouvez trouver plus d'informations sur notre site web."]
+    },
+    "dellaiLivraison":{
+      "questions":["Pouvez-vous livrer à une adresse différente de l'adresse de facturation ?"],
+      "réponses":["Nous pouvons livrer à une adresse différente de l'adresse de facturation si vous le souhaitez. Vous pouvez trouver plus d'informations sur notre site web."]
+    },
+    "blabla":{
+      "questions":["teste test etes"],
+      "réponses":["oui oui"]
+    }
+  }
+  
